@@ -1,0 +1,46 @@
+{
+  "author": "MisterMagoo",
+  "classifications": [],
+  "description": "A Blazor solution with both WASM and Server Side clients and a centralised Core",
+  "name": "Blazor Twins Shell Project",
+  "defaultName": "BlazorProject",
+  "identity": "Blazor.Twins.CSharp",
+  "groupIdentity": "Blazor.Twins",
+  "tags": {
+    "language": "C#",
+    "type": "project",
+    "framework": "Blazor"
+  },
+  "shortName": "blazortwins",
+  "sourceName": "Blazor.Twins",
+  "guids": [
+    "{5A1B12DA-CE0B-475E-9A62-636F87BEE37F}",
+    "{F690407A-B1D8-458C-B7AE-AEFC3A38BB54}",
+    "{6B1D07F1-8245-4074-8E08-FDDECF4C9351}"
+  ],
+  "primaryOutputs": [
+    {
+      "path": "src\\Blazor.Twins.Client\\Blazor.Twins.Client.csproj"
+    },
+    {
+      "path": "src\\Blazor.Twins.Core\\Blazor.Twins.Core.csproj"
+    },
+    {
+      "path": "src\\Blazor.Twins.Server\\Blazor.Twins.Server.csproj"
+    }
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "copyOnly": [ "Directory.Build.props", "README.md", "LICENSE" ],
+          "exclude": [
+            "**/.git/**",
+            "**/*.nuspec",
+            "VsixPackager/**"
+          ]
+        }
+      ]
+    }
+  ]
+}
