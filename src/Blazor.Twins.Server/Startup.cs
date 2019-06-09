@@ -1,7 +1,6 @@
 using Blazor.Twins.Core.Services;
 using Blazor.Twins.Server.Services;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -14,11 +13,8 @@ namespace Blazor.Twins.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc()
-                .AddNewtonsoftJson();
-
-            services.AddRazorComponents();
-
+            services.AddRazorPages();
+            services.AddServerSideBlazor();
             services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
         }
 
@@ -36,20 +32,15 @@ namespace Blazor.Twins.Server
             }
 
             //app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
-            app.UseRouting(routes =>
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRazorPages();
-                routes.MapHub<ComponentHub>(
-                    ComponentHub.DefaultPath,
-                    o =>
-                    {
-                        o.ApplicationMaxBufferSize = 1024000; // larger size
-                        o.TransportMaxBufferSize = 1024000; // larger size
-                    })
-                    .AddComponent<App>("app");
-                //routes.MapComponentHub<App>("app");
+                endpoints.MapBlazorHub<Core.Components.App>("app");
+                endpoints.MapFallbackToPage("/_Host");
             });
         }
     }

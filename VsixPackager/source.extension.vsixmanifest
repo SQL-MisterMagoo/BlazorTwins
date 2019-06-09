@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="4EC4131D-7E71-48A5-A050-48A10C2D24E1" Version="1.0" Language="en-US" Publisher="Author Name" />
-    <DisplayName>My Custom Project Template</DisplayName>
-    <Description>My Custom Project Template. Created with SideWaffle</Description>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-  </Dependencies>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
-  </Prerequisites>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="Output\Templates" />
-  </Assets>
+    <Metadata>
+        <Identity Id="Blazor.Twins.Template-4EC4131D-7E71-48A5-A050-48A10C2D24E1" Version="1.0" Language="en-US" Publisher="Mister Magoo" />
+        <DisplayName>Blazor.Twins.Template</DisplayName>
+        <Description xml:space="preserve">Blazor Twins Solution Template</Description>
+        <Icon>android-icon-192x192.png</Icon>
+        <Tags>Blazor,Web,ASP.NETCore,Core</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.2,)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.2,)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.2,)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.1.28811.260,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="Output\Templates" />
+    </Assets>
 </PackageManifest>

@@ -4,13 +4,13 @@
     <Name>Blazor Twins Shell Project</Name>
     <Description>A Blazor solution with both WASM and Server Side clients and a centralised Core</Description>
     <TemplateID>Blazor.Twins.CSharp</TemplateID>
-    <DefaultName>BlazorProject</DefaultName>
+    <DefaultName>Blazor.Project</DefaultName>
     
     <Icon>project-icon.png</Icon>
     
     <ProjectType>CSharp</ProjectType>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
-    <SortOrder>5000</SortOrder>
+    <SortOrder>1</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
@@ -21,7 +21,7 @@
     <CustomParameters>
       <CustomParameter Name = "$language$" Value="CSharp" />
       <CustomParameter Name = "$uistyle$" Value="none"/>
-      <CustomParameter Name = "$groupid$" Value="Blazor.Twin" />
+      <CustomParameter Name = "$groupid$" Value="Blazor.Twins" />
       <CustomParameter Name = "SideWaffleNewProjNode" Value="CSharp\Web\Blazor"/>
     </CustomParameters>
   </TemplateContent>

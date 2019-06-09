@@ -13,11 +13,7 @@
   },
   "shortName": "blazortwins",
   "sourceName": "Blazor.Twins",
-  "guids": [
-    "{5A1B12DA-CE0B-475E-9A62-636F87BEE37F}",
-    "{F690407A-B1D8-458C-B7AE-AEFC3A38BB54}",
-    "{6B1D07F1-8245-4074-8E08-FDDECF4C9351}"
-  ],
+  "guids": [ ],
   "primaryOutputs": [
     {
       "path": "src\\Blazor.Twins.Client\\Blazor.Twins.Client.csproj"

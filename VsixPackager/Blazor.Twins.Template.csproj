@@ -17,8 +17,8 @@
     <ProjectGuid>{F3DE8005-59AD-4433-9B07-BE69242AFAA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VsixPackager</RootNamespace>
-    <AssemblyName>VsixPackager</AssemblyName>
+    <RootNamespace>Blazor.Twins.Template</RootNamespace>
+    <AssemblyName>Blazor.Twins.Template</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -57,7 +57,13 @@
     <None Include="template\templatepack.VsixPackager.proj" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\project-icon.png" />
+    <Content Include="android-icon-192x192.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Properties\project-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="stylesheet.css" />
     <Content Include="template.pkgdef">
       <IncludeInVSIX>true</IncludeInVSIX>

@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.template.config\template.vstemplate = .template.config\template.vstemplate
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsixPackager", "VsixPackager\VsixPackager.csproj", "{F3DE8005-59AD-4433-9B07-BE69242AFAA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.Twins.Template", "VsixPackager\Blazor.Twins.Template.csproj", "{F3DE8005-59AD-4433-9B07-BE69242AFAA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
