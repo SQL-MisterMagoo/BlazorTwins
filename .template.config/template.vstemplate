@@ -9,6 +9,10 @@
     <Icon>project-icon.png</Icon>
     
     <ProjectType>CSharp</ProjectType>
+    <LanguageTag>C#</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <PlatformTag>linux</PlatformTag>
+    <ProjectTypeTag>web</ProjectTypeTag>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <SortOrder>1</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
