@@ -48,7 +48,8 @@ namespace Blazor.Twins.Server
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapBlazorHub<Core.Components.App>("app");
+                endpoints.MapControllers();
+                endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
         }
