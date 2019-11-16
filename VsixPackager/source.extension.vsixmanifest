@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Blazor.Twins.Template-4EC4131D-7E71-48A5-A050-48A10C2D24E1" Version="1.0.3" Language="en-US" Publisher="Mister Magoo" />
+        <Identity Id="Blazor.Twins.Template-4EC4131D-7E71-48A5-A050-48A10C2D24E1" Version="1.0.4" Language="en-US" Publisher="Mister Magoo" />
         <DisplayName>Blazor.Twins.Template</DisplayName>
         <Description xml:space="preserve">Blazor Twins Solution Template
-Built for 3.1.0-preview2.19528.8</Description>
+Built for 3.1.0-preview3.19555.2</Description>
         <Icon>android-icon-192x192.png</Icon>
         <Tags>Blazor,Web,ASP.NETCore,Core</Tags>
     </Metadata>
