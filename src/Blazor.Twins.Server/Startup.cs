@@ -35,13 +35,12 @@ namespace Blazor.Twins.Server
             }
             else
             {
+                app.UseExceptionHandler("/");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
-            //Feel free to uncomment this - I just can't seem to get https to work on anything except Edge
-            //app.UseHttpsRedirection();
-
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();

@@ -1,10 +1,27 @@
 ﻿<Router AppAssembly="typeof(Blazor.Twins.Core.Components.App).Assembly">
-	<Found Context="routeData">
-		<RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-	</Found>
-	<NotFound>
-		<LayoutView Layout="@typeof(MainLayout)">
-			<p>Sorry, there's nothing at this address.</p>
-		</LayoutView>
-	</NotFound>
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p>Sorry, there's nothing at this address.</p>
+        </LayoutView>
+    </NotFound>
 </Router>
+@* Code below handles deep links to anchors through the entire application *@
+@inject NavigationManager NavMan
+@inject IJSRuntime JS
+@code
+{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && NavMan.Uri.Contains('#'))
+        {
+            var parts = NavMan.Uri.Split('#');
+            if (parts.Length > 1)
+            {
+                await JS.InvokeVoidAsync("eval", $"window.location.hash='#{parts.Last()}'");
+            }
+        }
+    }
+}

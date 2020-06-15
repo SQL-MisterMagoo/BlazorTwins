@@ -5,7 +5,7 @@ This is a template Solution for building Blazor with two front ends - Client sid
 
 Changelog:
 
-#### Version 0.1.0-beta-1
+#### Version 1.0.6
 - Initial commit contains a 3 project solution 
 
 Projects in this repo:
